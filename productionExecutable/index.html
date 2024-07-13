@@ -11,13 +11,17 @@
      function yyt() {
      var WebApp = window.Telegram.WebApp;
      var x = "22";
-     alert(`${x}` - ${WebApp.initDataUnsafe.user.username}`);
+     var y = WebApp.initDataUnsafe.user.username;
+     alert(`${x}` - ${y}`);
      //WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`);
+     }
+     function yy() {
+     return WebApp.initDataUnsafe.user.username;
      }
 </script>
 
 </head>
 <body onload="yyt()">
-<p> qwe rr pp 11 </p>
+<p> qwe rr pp 11 22 yy()</p>
 </body>
 </html>
