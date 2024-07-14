@@ -15,9 +15,13 @@
            var WebApp = window.Telegram.WebApp;
            return WebApp.initDataUnsafe.user.username;
        }
+       function e() {
+           var WebApp = window.Telegram.WebApp;
+           WebApp.expand();
+       }|
     </script>
 </head>
-<body>
-<p> ver 35 </p>
+<body onload="e()">
+<p> ver 36 </p>
 </body>
 </html>
