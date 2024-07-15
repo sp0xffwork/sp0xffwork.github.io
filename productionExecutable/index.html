@@ -20,8 +20,19 @@
            WebApp.expand();
        }
     </script>
+   <script> 
+        // Check if the screen.orientation API is supported 
+        if (screen.orientation) { 
+            // Lock the orientation to portrait mode 
+            screen.orientation.lock('portrait').catch(function(error) { 
+                console.error('Failed to lock the screen orientation:', error); 
+            }); 
+        } else { 
+            console.error('Screen orientation API is not supported on this device.'); 
+        } 
+    </script> 
 </head>
 <body onload="e123()">
-<p> ver 37 </p>
+<p> ver 38 </p>
 </body>
 </html>
