@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KotlinProject 3</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script type="application/javascript" src="composeApp.js"></script>
+    <script>
+       function getName222() {
+           return "name222";
+       }
+       function getName111() {
+           var WebApp = window.Telegram.WebApp;
+           return WebApp.initDataUnsafe.user.username;
+       }
+       function e123() {
+           var WebApp = window.Telegram.WebApp;
+           WebApp.expand();
+       }
+    </script>
+   <script> 
+        // Check if the screen.orientation API is supported 
+        if (screen.orientation) { 
+            // Lock the orientation to portrait mode 
+            screen.orientation.lock('portrait').catch(function(error) { 
+                console.error('Failed to lock the screen orientation:', error); 
+            }); 
+        } else { 
+            console.error('Screen orientation API is not supported on this device.'); 
+        } 
+    </script> 
+</head>
+<body onload="e123()">
+<p> ver 38 </p>
+</body>
+</html>
